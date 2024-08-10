@@ -9,27 +9,29 @@ import Foundation
 import Moya
 
 enum CatPictureRouter {
-	
+	case randomImage
 }
 
 extension CatPictureRouter: TargetType {
 	var baseURL: URL {
-		<#code#>
+		return URL(string: "https://api.thecatapi.com")!
 	}
 	
 	var path: String {
-		<#code#>
+		return "/v1/images/search?limit=20"
 	}
 	
 	var method: Moya.Method {
-		<#code#>
+		return .get
 	}
 	
 	var task: Moya.Task {
-		<#code#>
+	 	return .requestPlain
 	}
 	
 	var headers: [String : String]? {
-		<#code#>
+		return [
+			HTTPHeaders.catAPIKeyHeader.rawValue: APIKey.catAPIKey.rawValue
+		]
 	}
 }
