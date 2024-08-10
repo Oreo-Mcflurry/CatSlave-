@@ -9,46 +9,34 @@
 /* Begin PBXBuildFile section */
 		0BC269562C670D3C005CDD0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC269552C670D3C005CDD0C /* AppDelegate.swift */; };
 		0BC269582C670D3C005CDD0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC269572C670D3C005CDD0C /* SceneDelegate.swift */; };
-		0BC2695A2C670D3C005CDD0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC269592C670D3C005CDD0C /* ViewController.swift */; };
-		0BC2695D2C670D3C005CDD0C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0BC2695C2C670D3C005CDD0C /* Base */; };
 		0BC2695F2C670D3D005CDD0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC2695E2C670D3D005CDD0C /* Assets.xcassets */; };
 		0BC269622C670D3D005CDD0C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0BC269612C670D3D005CDD0C /* Base */; };
-		0BC2696D2C670D3D005CDD0C /* CatSlaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2696C2C670D3D005CDD0C /* CatSlaveTests.swift */; };
-		0BC269772C670D3D005CDD0C /* CatSlaveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC269762C670D3D005CDD0C /* CatSlaveUITests.swift */; };
-		0BC269792C670D3D005CDD0C /* CatSlaveUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC269782C670D3D005CDD0C /* CatSlaveUITestsLaunchTests.swift */; };
+		0BC269892C670D80005CDD0C /* BottomTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC269882C670D80005CDD0C /* BottomTabbarView.swift */; };
+		0BC2698D2C670F6E005CDD0C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC2698C2C670F6E005CDD0C /* ComposableArchitecture */; };
+		0BC269902C670FB1005CDD0C /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC2698F2C670FB1005CDD0C /* CombineMoya */; };
+		0BC269922C670FB1005CDD0C /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC269912C670FB1005CDD0C /* Moya */; };
+		0BC269962C67102D005CDD0C /* CatReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC269952C67102D005CDD0C /* CatReducer.swift */; };
+		0BC2699B2C6791D1005CDD0C /* CatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2699A2C6791D1005CDD0C /* CatView.swift */; };
+		0BC2699F2C679338005CDD0C /* NavigationWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2699E2C679338005CDD0C /* NavigationWrapper.swift */; };
+		0BC269A22C6794CF005CDD0C /* View+ForegroundColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC269A12C6794CF005CDD0C /* View+ForegroundColor+Extension.swift */; };
+		0BC269A72C67A4EE005CDD0C /* CatPictureRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC269A62C67A4EE005CDD0C /* CatPictureRouter.swift */; };
+		0BC269AB2C67A704005CDD0C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0BC269AA2C67A704005CDD0C /* .gitignore */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		0BC269692C670D3D005CDD0C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0BC2694A2C670D3C005CDD0C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0BC269512C670D3C005CDD0C;
-			remoteInfo = CatSlave;
-		};
-		0BC269732C670D3D005CDD0C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0BC2694A2C670D3C005CDD0C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0BC269512C670D3C005CDD0C;
-			remoteInfo = CatSlave;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0BC269522C670D3C005CDD0C /* CatSlave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatSlave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BC269552C670D3C005CDD0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BC269572C670D3C005CDD0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0BC269592C670D3C005CDD0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0BC2695C2C670D3C005CDD0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0BC2695E2C670D3D005CDD0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BC269612C670D3D005CDD0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BC269632C670D3D005CDD0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0BC269682C670D3D005CDD0C /* CatSlaveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatSlaveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0BC2696C2C670D3D005CDD0C /* CatSlaveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatSlaveTests.swift; sourceTree = "<group>"; };
-		0BC269722C670D3D005CDD0C /* CatSlaveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatSlaveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0BC269762C670D3D005CDD0C /* CatSlaveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatSlaveUITests.swift; sourceTree = "<group>"; };
-		0BC269782C670D3D005CDD0C /* CatSlaveUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatSlaveUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0BC269882C670D80005CDD0C /* BottomTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabbarView.swift; sourceTree = "<group>"; };
+		0BC269952C67102D005CDD0C /* CatReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatReducer.swift; sourceTree = "<group>"; };
+		0BC2699A2C6791D1005CDD0C /* CatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatView.swift; sourceTree = "<group>"; };
+		0BC2699E2C679338005CDD0C /* NavigationWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationWrapper.swift; sourceTree = "<group>"; };
+		0BC269A12C6794CF005CDD0C /* View+ForegroundColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ForegroundColor+Extension.swift"; sourceTree = "<group>"; };
+		0BC269A62C67A4EE005CDD0C /* CatPictureRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatPictureRouter.swift; sourceTree = "<group>"; };
+		0BC269AA2C67A704005CDD0C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,20 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0BC269652C670D3D005CDD0C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0BC2696F2C670D3D005CDD0C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0BC269902C670FB1005CDD0C /* CombineMoya in Frameworks */,
+				0BC2698D2C670F6E005CDD0C /* ComposableArchitecture in Frameworks */,
+				0BC269922C670FB1005CDD0C /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,9 +56,8 @@
 		0BC269492C670D3C005CDD0C = {
 			isa = PBXGroup;
 			children = (
+				0BC269AA2C67A704005CDD0C /* .gitignore */,
 				0BC269542C670D3C005CDD0C /* CatSlave */,
-				0BC2696B2C670D3D005CDD0C /* CatSlaveTests */,
-				0BC269752C670D3D005CDD0C /* CatSlaveUITests */,
 				0BC269532C670D3C005CDD0C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				0BC269522C670D3C005CDD0C /* CatSlave.app */,
-				0BC269682C670D3D005CDD0C /* CatSlaveTests.xctest */,
-				0BC269722C670D3D005CDD0C /* CatSlaveUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,10 +73,11 @@
 		0BC269542C670D3C005CDD0C /* CatSlave */ = {
 			isa = PBXGroup;
 			children = (
+				0BC269982C671085005CDD0C /* Utility */,
+				0BC269972C67107E005CDD0C /* Service */,
+				0BC269862C670D74005CDD0C /* Scene */,
 				0BC269552C670D3C005CDD0C /* AppDelegate.swift */,
 				0BC269572C670D3C005CDD0C /* SceneDelegate.swift */,
-				0BC269592C670D3C005CDD0C /* ViewController.swift */,
-				0BC2695B2C670D3C005CDD0C /* Main.storyboard */,
 				0BC2695E2C670D3D005CDD0C /* Assets.xcassets */,
 				0BC269602C670D3D005CDD0C /* LaunchScreen.storyboard */,
 				0BC269632C670D3D005CDD0C /* Info.plist */,
@@ -110,21 +85,95 @@
 			path = CatSlave;
 			sourceTree = "<group>";
 		};
-		0BC2696B2C670D3D005CDD0C /* CatSlaveTests */ = {
+		0BC269862C670D74005CDD0C /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				0BC2696C2C670D3D005CDD0C /* CatSlaveTests.swift */,
+				0BC2699D2C67932B005CDD0C /* Components */,
+				0BC2698A2C670F2C005CDD0C /* CatView */,
+				0BC269872C670D76005CDD0C /* TabbarView */,
 			);
-			path = CatSlaveTests;
+			path = Scene;
 			sourceTree = "<group>";
 		};
-		0BC269752C670D3D005CDD0C /* CatSlaveUITests */ = {
+		0BC269872C670D76005CDD0C /* TabbarView */ = {
 			isa = PBXGroup;
 			children = (
-				0BC269762C670D3D005CDD0C /* CatSlaveUITests.swift */,
-				0BC269782C670D3D005CDD0C /* CatSlaveUITestsLaunchTests.swift */,
+				0BC269882C670D80005CDD0C /* BottomTabbarView.swift */,
 			);
-			path = CatSlaveUITests;
+			path = TabbarView;
+			sourceTree = "<group>";
+		};
+		0BC2698A2C670F2C005CDD0C /* CatView */ = {
+			isa = PBXGroup;
+			children = (
+				0BC269942C671026005CDD0C /* View */,
+				0BC269932C671021005CDD0C /* Reducer */,
+			);
+			path = CatView;
+			sourceTree = "<group>";
+		};
+		0BC269932C671021005CDD0C /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				0BC269952C67102D005CDD0C /* CatReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		0BC269942C671026005CDD0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0BC2699A2C6791D1005CDD0C /* CatView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0BC269972C67107E005CDD0C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0BC269A82C67A6EC005CDD0C /* APIKey */,
+				0BC269A42C67A4D7005CDD0C /* CatPictureFetchService */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0BC269982C671085005CDD0C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0BC269A02C6794AF005CDD0C /* Extension */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		0BC2699D2C67932B005CDD0C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0BC2699E2C679338005CDD0C /* NavigationWrapper.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0BC269A02C6794AF005CDD0C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0BC269A12C6794CF005CDD0C /* View+ForegroundColor+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0BC269A42C67A4D7005CDD0C /* CatPictureFetchService */ = {
+			isa = PBXGroup;
+			children = (
+				0BC269A62C67A4EE005CDD0C /* CatPictureRouter.swift */,
+			);
+			path = CatPictureFetchService;
+			sourceTree = "<group>";
+		};
+		0BC269A82C67A6EC005CDD0C /* APIKey */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIKey;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,45 +192,14 @@
 			dependencies = (
 			);
 			name = CatSlave;
+			packageProductDependencies = (
+				0BC2698C2C670F6E005CDD0C /* ComposableArchitecture */,
+				0BC2698F2C670FB1005CDD0C /* CombineMoya */,
+				0BC269912C670FB1005CDD0C /* Moya */,
+			);
 			productName = CatSlave;
 			productReference = 0BC269522C670D3C005CDD0C /* CatSlave.app */;
 			productType = "com.apple.product-type.application";
-		};
-		0BC269672C670D3D005CDD0C /* CatSlaveTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0BC2697F2C670D3D005CDD0C /* Build configuration list for PBXNativeTarget "CatSlaveTests" */;
-			buildPhases = (
-				0BC269642C670D3D005CDD0C /* Sources */,
-				0BC269652C670D3D005CDD0C /* Frameworks */,
-				0BC269662C670D3D005CDD0C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0BC2696A2C670D3D005CDD0C /* PBXTargetDependency */,
-			);
-			name = CatSlaveTests;
-			productName = CatSlaveTests;
-			productReference = 0BC269682C670D3D005CDD0C /* CatSlaveTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		0BC269712C670D3D005CDD0C /* CatSlaveUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0BC269822C670D3D005CDD0C /* Build configuration list for PBXNativeTarget "CatSlaveUITests" */;
-			buildPhases = (
-				0BC2696E2C670D3D005CDD0C /* Sources */,
-				0BC2696F2C670D3D005CDD0C /* Frameworks */,
-				0BC269702C670D3D005CDD0C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0BC269742C670D3D005CDD0C /* PBXTargetDependency */,
-			);
-			name = CatSlaveUITests;
-			productName = CatSlaveUITests;
-			productReference = 0BC269722C670D3D005CDD0C /* CatSlaveUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -196,14 +214,6 @@
 					0BC269512C670D3C005CDD0C = {
 						CreatedOnToolsVersion = 15.3;
 					};
-					0BC269672C670D3D005CDD0C = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = 0BC269512C670D3C005CDD0C;
-					};
-					0BC269712C670D3D005CDD0C = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = 0BC269512C670D3C005CDD0C;
-					};
 				};
 			};
 			buildConfigurationList = 0BC2694D2C670D3C005CDD0C /* Build configuration list for PBXProject "CatSlave" */;
@@ -215,13 +225,15 @@
 				Base,
 			);
 			mainGroup = 0BC269492C670D3C005CDD0C;
+			packageReferences = (
+				0BC2698B2C670F6E005CDD0C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				0BC2698E2C670FB1005CDD0C /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 0BC269532C670D3C005CDD0C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				0BC269512C670D3C005CDD0C /* CatSlave */,
-				0BC269672C670D3D005CDD0C /* CatSlaveTests */,
-				0BC269712C670D3D005CDD0C /* CatSlaveUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,22 +244,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BC2695F2C670D3D005CDD0C /* Assets.xcassets in Resources */,
+				0BC269AB2C67A704005CDD0C /* .gitignore in Resources */,
 				0BC269622C670D3D005CDD0C /* Base in Resources */,
-				0BC2695D2C670D3C005CDD0C /* Base in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0BC269662C670D3D005CDD0C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0BC269702C670D3D005CDD0C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,53 +256,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BC2695A2C670D3C005CDD0C /* ViewController.swift in Sources */,
+				0BC269892C670D80005CDD0C /* BottomTabbarView.swift in Sources */,
+				0BC269962C67102D005CDD0C /* CatReducer.swift in Sources */,
 				0BC269562C670D3C005CDD0C /* AppDelegate.swift in Sources */,
+				0BC269A72C67A4EE005CDD0C /* CatPictureRouter.swift in Sources */,
+				0BC2699F2C679338005CDD0C /* NavigationWrapper.swift in Sources */,
 				0BC269582C670D3C005CDD0C /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0BC269642C670D3D005CDD0C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0BC2696D2C670D3D005CDD0C /* CatSlaveTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0BC2696E2C670D3D005CDD0C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0BC269792C670D3D005CDD0C /* CatSlaveUITestsLaunchTests.swift in Sources */,
-				0BC269772C670D3D005CDD0C /* CatSlaveUITests.swift in Sources */,
+				0BC2699B2C6791D1005CDD0C /* CatView.swift in Sources */,
+				0BC269A22C6794CF005CDD0C /* View+ForegroundColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		0BC2696A2C670D3D005CDD0C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0BC269512C670D3C005CDD0C /* CatSlave */;
-			targetProxy = 0BC269692C670D3D005CDD0C /* PBXContainerItemProxy */;
-		};
-		0BC269742C670D3D005CDD0C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0BC269512C670D3C005CDD0C /* CatSlave */;
-			targetProxy = 0BC269732C670D3D005CDD0C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		0BC2695B2C670D3C005CDD0C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0BC2695C2C670D3C005CDD0C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0BC269602C670D3D005CDD0C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -447,9 +412,9 @@
 				INFOPLIST_FILE = CatSlave/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,9 +422,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.muskyoo.CatSlave;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -475,9 +444,9 @@
 				INFOPLIST_FILE = CatSlave/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,85 +454,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.muskyoo.CatSlave;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		0BC269802C670D3D005CDD0C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y7F2ZW9QG3;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.muskyoo.CatSlaveTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatSlave.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CatSlave";
-			};
-			name = Debug;
-		};
-		0BC269812C670D3D005CDD0C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y7F2ZW9QG3;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.muskyoo.CatSlaveTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatSlave.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CatSlave";
-			};
-			name = Release;
-		};
-		0BC269832C670D3D005CDD0C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y7F2ZW9QG3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.muskyoo.CatSlaveUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CatSlave;
-			};
-			name = Debug;
-		};
-		0BC269842C670D3D005CDD0C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y7F2ZW9QG3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.muskyoo.CatSlaveUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CatSlave;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -588,25 +485,44 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0BC2697F2C670D3D005CDD0C /* Build configuration list for PBXNativeTarget "CatSlaveTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0BC269802C670D3D005CDD0C /* Debug */,
-				0BC269812C670D3D005CDD0C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0BC269822C670D3D005CDD0C /* Build configuration list for PBXNativeTarget "CatSlaveUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0BC269832C670D3D005CDD0C /* Debug */,
-				0BC269842C670D3D005CDD0C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0BC2698B2C670F6E005CDD0C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.12.1;
+			};
+		};
+		0BC2698E2C670FB1005CDD0C /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0BC2698C2C670F6E005CDD0C /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BC2698B2C670F6E005CDD0C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		0BC2698F2C670FB1005CDD0C /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BC2698E2C670FB1005CDD0C /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		0BC269912C670FB1005CDD0C /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BC2698E2C670FB1005CDD0C /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0BC2694A2C670D3C005CDD0C /* Project object */;
 }
