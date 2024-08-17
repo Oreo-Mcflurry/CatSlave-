@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol DTOModel: Decodable, Hashable, Equatable {
+protocol DTOModel: Hashable, Equatable {
 	
 }
 

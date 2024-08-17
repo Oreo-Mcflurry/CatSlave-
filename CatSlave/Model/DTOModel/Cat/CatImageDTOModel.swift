@@ -10,7 +10,8 @@ import Foundation
 struct CatImageDTOModel: DTOModel {
 	var uuid = UUID()
 	let id: String
-	let url: URL
+	let url: URL?
 	let computedHeight: CGFloat
 	let ratio: CGFloat
+	let type: ImageType
 }

@@ -18,13 +18,21 @@ struct CatImageModel: DTODecodableModel {
 			guard width != 0 else { return 0 }
 			return CGFloat(width) / CGFloat(height)
 		}()
-	 
+		
+		let type: ImageType = {
+			if url.suffix(3).lowercased() == "gif" {
+				return .gif
+			} else {
+				return .jpg
+			}
+		}()
 		
 		return CatImageDTOModel(
 			id: id,
-			url: URL(string: url)!,
+			url: URL(string: url),
 			computedHeight: (CGFloat(height) * 300) / CGFloat(width),
-			ratio: ratio
+			ratio: ratio,
+			type: type
 		)
 	}
 }

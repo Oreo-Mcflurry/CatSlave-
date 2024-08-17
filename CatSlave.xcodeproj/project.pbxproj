@@ -37,6 +37,9 @@
 		0BFD8A972C70981F0055B05D /* CatImageDTOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD8A962C70981F0055B05D /* CatImageDTOModel.swift */; };
 		0BFD8A9C2C7098360055B05D /* DTOProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD8A9B2C7098360055B05D /* DTOProtocol.swift */; };
 		0BFD8A9E2C70CA2C0055B05D /* OffsetObservableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD8A9D2C70CA2C0055B05D /* OffsetObservableScrollView.swift */; };
+		0BFD8AA62C70D18F0055B05D /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD8AA52C70D18F0055B05D /* SearchViewModel.swift */; };
+		0BFD8AA82C70D1BA0055B05D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD8AA72C70D1BA0055B05D /* SearchView.swift */; };
+		0BFD8AAE2C70D3980055B05D /* ImageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD8AAD2C70D3980055B05D /* ImageType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,9 @@
 		0BFD8A962C70981F0055B05D /* CatImageDTOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageDTOModel.swift; sourceTree = "<group>"; };
 		0BFD8A9B2C7098360055B05D /* DTOProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOProtocol.swift; sourceTree = "<group>"; };
 		0BFD8A9D2C70CA2C0055B05D /* OffsetObservableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetObservableScrollView.swift; sourceTree = "<group>"; };
+		0BFD8AA52C70D18F0055B05D /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		0BFD8AA72C70D1BA0055B05D /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		0BFD8AAD2C70D3980055B05D /* ImageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,7 @@
 		0BC269862C670D74005CDD0C /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				0BFD8AA22C70D17A0055B05D /* SearchView */,
 				0BC2699D2C67932B005CDD0C /* Components */,
 				0BC2698A2C670F2C005CDD0C /* CatView */,
 				0BC269872C670D76005CDD0C /* TabbarView */,
@@ -176,6 +183,7 @@
 		0BC269982C671085005CDD0C /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				0BFD8AAC2C70D3910055B05D /* Enum */,
 				0BFD8A9A2C70982E0055B05D /* Protocol */,
 				0BC269A02C6794AF005CDD0C /* Extension */,
 			);
@@ -283,6 +291,39 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		0BFD8AA22C70D17A0055B05D /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				0BFD8AA42C70D1840055B05D /* ViewModel */,
+				0BFD8AA32C70D1810055B05D /* View */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
+		0BFD8AA32C70D1810055B05D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0BFD8AA72C70D1BA0055B05D /* SearchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0BFD8AA42C70D1840055B05D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0BFD8AA52C70D18F0055B05D /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0BFD8AAC2C70D3910055B05D /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				0BFD8AAD2C70D3980055B05D /* ImageType.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -386,6 +427,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.dSYM",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -398,10 +440,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BFD8AA82C70D1BA0055B05D /* SearchView.swift in Sources */,
 				0BC269892C670D80005CDD0C /* BottomTabbarView.swift in Sources */,
 				0B6873502C6DD17700BD6199 /* CatViewModel.swift in Sources */,
 				0BC269C72C689675005CDD0C /* CatImageModel.swift in Sources */,
+				0BFD8AAE2C70D3980055B05D /* ImageType.swift in Sources */,
 				0BFD8A9C2C7098360055B05D /* DTOProtocol.swift in Sources */,
+				0BFD8AA62C70D18F0055B05D /* SearchViewModel.swift in Sources */,
 				0BC269562C670D3C005CDD0C /* AppDelegate.swift in Sources */,
 				0BFD8A972C70981F0055B05D /* CatImageDTOModel.swift in Sources */,
 				0BFD8A9E2C70CA2C0055B05D /* OffsetObservableScrollView.swift in Sources */,

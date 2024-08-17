@@ -11,17 +11,12 @@ import Combine
 final class CatViewModel: ObservableObject {
 	@Published var leftColumnImages: [CatImageDTOModel] = []
 	@Published var rightColumnImages: [CatImageDTOModel] = []
-	@Published var scrollOffset: CGPoint = .zero
 	
 	private var leftHeight: CGFloat = .zero
 	private var rightHeight: CGFloat = .zero
 	
 	private let catFetchService = CatPictureService.shared
 	private var cancellable = Set<AnyCancellable>()
-	
-	init() {
-		fetchCatImages()
-	}
 	
 	func fetchCatImages(isRefresh: Bool = false) {
 		catFetchService.fetchRandomCatImage()
