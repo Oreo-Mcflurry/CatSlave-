@@ -34,6 +34,9 @@
 		0BC269C92C68B5AD005CDD0C /* CatPictureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC269C82C68B5AD005CDD0C /* CatPictureService.swift */; };
 		0BF21B9D2C6DD41B0059A6A3 /* Viewrito in Frameworks */ = {isa = PBXBuildFile; productRef = 0BF21B9C2C6DD41B0059A6A3 /* Viewrito */; };
 		0BFD8A922C7062860055B05D /* MoyaLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD8A912C7062860055B05D /* MoyaLogger.swift */; };
+		0BFD8A972C70981F0055B05D /* CatImageDTOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD8A962C70981F0055B05D /* CatImageDTOModel.swift */; };
+		0BFD8A9C2C7098360055B05D /* DTOProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD8A9B2C7098360055B05D /* DTOProtocol.swift */; };
+		0BFD8A9E2C70CA2C0055B05D /* OffsetObservableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD8A9D2C70CA2C0055B05D /* OffsetObservableScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		0BC269C62C689675005CDD0C /* CatImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageModel.swift; sourceTree = "<group>"; };
 		0BC269C82C68B5AD005CDD0C /* CatPictureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatPictureService.swift; sourceTree = "<group>"; };
 		0BFD8A912C7062860055B05D /* MoyaLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLogger.swift; sourceTree = "<group>"; };
+		0BFD8A962C70981F0055B05D /* CatImageDTOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageDTOModel.swift; sourceTree = "<group>"; };
+		0BFD8A9B2C7098360055B05D /* DTOProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOProtocol.swift; sourceTree = "<group>"; };
+		0BFD8A9D2C70CA2C0055B05D /* OffsetObservableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetObservableScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +176,7 @@
 		0BC269982C671085005CDD0C /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				0BFD8A9A2C70982E0055B05D /* Protocol */,
 				0BC269A02C6794AF005CDD0C /* Extension */,
 			);
 			path = Utility;
@@ -179,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				0BC2699E2C679338005CDD0C /* NavigationWrapper.swift */,
+				0BFD8A9D2C70CA2C0055B05D /* OffsetObservableScrollView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -221,7 +229,8 @@
 		0BC269C42C68966B005CDD0C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0BC269C52C68966E005CDD0C /* Cat */,
+				0BFD8A942C7098040055B05D /* DecodableModel */,
+				0BFD8A932C7097FB0055B05D /* DTOModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -240,6 +249,38 @@
 				0BFD8A912C7062860055B05D /* MoyaLogger.swift */,
 			);
 			path = MoyaPlugin;
+			sourceTree = "<group>";
+		};
+		0BFD8A932C7097FB0055B05D /* DTOModel */ = {
+			isa = PBXGroup;
+			children = (
+				0BFD8A952C7098160055B05D /* Cat */,
+			);
+			path = DTOModel;
+			sourceTree = "<group>";
+		};
+		0BFD8A942C7098040055B05D /* DecodableModel */ = {
+			isa = PBXGroup;
+			children = (
+				0BC269C52C68966E005CDD0C /* Cat */,
+			);
+			path = DecodableModel;
+			sourceTree = "<group>";
+		};
+		0BFD8A952C7098160055B05D /* Cat */ = {
+			isa = PBXGroup;
+			children = (
+				0BFD8A962C70981F0055B05D /* CatImageDTOModel.swift */,
+			);
+			path = Cat;
+			sourceTree = "<group>";
+		};
+		0BFD8A9A2C70982E0055B05D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				0BFD8A9B2C7098360055B05D /* DTOProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,7 +401,10 @@
 				0BC269892C670D80005CDD0C /* BottomTabbarView.swift in Sources */,
 				0B6873502C6DD17700BD6199 /* CatViewModel.swift in Sources */,
 				0BC269C72C689675005CDD0C /* CatImageModel.swift in Sources */,
+				0BFD8A9C2C7098360055B05D /* DTOProtocol.swift in Sources */,
 				0BC269562C670D3C005CDD0C /* AppDelegate.swift in Sources */,
+				0BFD8A972C70981F0055B05D /* CatImageDTOModel.swift in Sources */,
+				0BFD8A9E2C70CA2C0055B05D /* OffsetObservableScrollView.swift in Sources */,
 				0B6873522C6DD30900BD6199 /* Sink+Extension.swift in Sources */,
 				0BC269A72C67A4EE005CDD0C /* CatPictureRouter.swift in Sources */,
 				0BC2699F2C679338005CDD0C /* NavigationWrapper.swift in Sources */,

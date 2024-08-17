@@ -26,7 +26,7 @@ extension CatPictureRouter: TargetType {
 	}
 	
 	var task: Task {
-		return .requestParameters(parameters: ["limit": 20], encoding: URLEncoding.queryString)
+		return .requestParameters(parameters: ["limit": 40], encoding: URLEncoding.queryString)
 	}
 	
 	var headers: [String : String]? {

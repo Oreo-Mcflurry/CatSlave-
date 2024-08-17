@@ -16,9 +16,13 @@ final class CatPictureService {
 	
 	private let provider = MoyaProvider<CatPictureRouter>(plugins: [MoyaLoggingPlugin()])
 	
-	func fetchRandomCatImage() -> AnyPublisher<[CatImageModel], MoyaError> {
+	func fetchRandomCatImage() -> AnyPublisher<[CatImageDTOModel], MoyaError> {
 		return provider.requestPublisher(.randomImage)
 			.map([CatImageModel].self)
+			.map { catImageModels in
+				catImageModels.map { $0.asDTOModel() }
+			}
+			.eraseToAnyPublisher()
 	}
 }
 
