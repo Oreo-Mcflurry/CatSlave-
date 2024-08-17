@@ -18,20 +18,18 @@ extension CatPictureRouter: TargetType {
 	}
 	
 	var path: String {
-		return "/v1/images/search?limit=20"
+		return "/v1/images/search"
 	}
 	
 	var method: Moya.Method {
 		return .get
 	}
 	
-	var task: Moya.Task {
-	 	return .requestPlain
+	var task: Task {
+		return .requestParameters(parameters: ["limit": 20], encoding: URLEncoding.queryString)
 	}
 	
 	var headers: [String : String]? {
-		return [
-			HTTPHeaders.catAPIKeyHeader.rawValue: APIKey.catAPIKey.rawValue
-		]
+		return nil
 	}
 }

@@ -6,22 +6,25 @@
 //
 
 import SwiftUI
-import ComposableArchitecture
+import Kingfisher
+import Viewrito
 
 struct CatView: View {
-	init(
-		store: StoreOf<CatReducer> = 
-		Store(initialState: CatReducer.State()) {
-			CatReducer()
-		}
-	) {
-		self.store = store
-	}
+	@StateObject private var viewModel = CatViewModel()
 	
-	let store: StoreOf<CatReducer>
     var body: some View {
-        Text("Hello, World!")
-			.color(.orange)
+		ScrollView {
+			ForEach(viewModel.catImageDatas, id: \.self) { item in
+				KFImage(URL(string: item.url))
+			}
+		}
+		.addViewModifier { view in
+			if #available(iOS 15.0, *) {
+				view.refreshable {
+					viewModel.fetchCatImages()
+				}
+			}
+		}
     }
 }
 

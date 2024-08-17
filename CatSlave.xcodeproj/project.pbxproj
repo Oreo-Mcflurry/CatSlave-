@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B6873502C6DD17700BD6199 /* CatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B68734F2C6DD17700BD6199 /* CatViewModel.swift */; };
+		0B6873522C6DD30900BD6199 /* Sink+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6873512C6DD30900BD6199 /* Sink+Extension.swift */; };
 		0BC269562C670D3C005CDD0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC269552C670D3C005CDD0C /* AppDelegate.swift */; };
 		0BC269582C670D3C005CDD0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC269572C670D3C005CDD0C /* SceneDelegate.swift */; };
 		0BC2695F2C670D3D005CDD0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC2695E2C670D3D005CDD0C /* Assets.xcassets */; };
 		0BC269622C670D3D005CDD0C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0BC269612C670D3D005CDD0C /* Base */; };
 		0BC269892C670D80005CDD0C /* BottomTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC269882C670D80005CDD0C /* BottomTabbarView.swift */; };
-		0BC2698D2C670F6E005CDD0C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC2698C2C670F6E005CDD0C /* ComposableArchitecture */; };
 		0BC269902C670FB1005CDD0C /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC2698F2C670FB1005CDD0C /* CombineMoya */; };
 		0BC269922C670FB1005CDD0C /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC269912C670FB1005CDD0C /* Moya */; };
-		0BC269962C67102D005CDD0C /* CatReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC269952C67102D005CDD0C /* CatReducer.swift */; };
 		0BC2699B2C6791D1005CDD0C /* CatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2699A2C6791D1005CDD0C /* CatView.swift */; };
 		0BC2699F2C679338005CDD0C /* NavigationWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2699E2C679338005CDD0C /* NavigationWrapper.swift */; };
 		0BC269A22C6794CF005CDD0C /* View+ForegroundColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC269A12C6794CF005CDD0C /* View+ForegroundColor+Extension.swift */; };
@@ -29,9 +29,16 @@
 		0BC269B92C682B66005CDD0C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC269B82C682B66005CDD0C /* FirebaseFirestore */; };
 		0BC269BB2C682B66005CDD0C /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC269BA2C682B66005CDD0C /* FirebaseFirestoreCombine-Community */; };
 		0BC269BD2C682BDE005CDD0C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BC269BC2C682BDD005CDD0C /* GoogleService-Info.plist */; };
+		0BC269C32C6894B8005CDD0C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC269C22C6894B8005CDD0C /* Kingfisher */; };
+		0BC269C72C689675005CDD0C /* CatImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC269C62C689675005CDD0C /* CatImageModel.swift */; };
+		0BC269C92C68B5AD005CDD0C /* CatPictureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC269C82C68B5AD005CDD0C /* CatPictureService.swift */; };
+		0BF21B9D2C6DD41B0059A6A3 /* Viewrito in Frameworks */ = {isa = PBXBuildFile; productRef = 0BF21B9C2C6DD41B0059A6A3 /* Viewrito */; };
+		0BFD8A922C7062860055B05D /* MoyaLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD8A912C7062860055B05D /* MoyaLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B68734F2C6DD17700BD6199 /* CatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewModel.swift; sourceTree = "<group>"; };
+		0B6873512C6DD30900BD6199 /* Sink+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sink+Extension.swift"; sourceTree = "<group>"; };
 		0BC269522C670D3C005CDD0C /* CatSlave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatSlave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BC269552C670D3C005CDD0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BC269572C670D3C005CDD0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +46,6 @@
 		0BC269612C670D3D005CDD0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BC269632C670D3D005CDD0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BC269882C670D80005CDD0C /* BottomTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabbarView.swift; sourceTree = "<group>"; };
-		0BC269952C67102D005CDD0C /* CatReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatReducer.swift; sourceTree = "<group>"; };
 		0BC2699A2C6791D1005CDD0C /* CatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatView.swift; sourceTree = "<group>"; };
 		0BC2699E2C679338005CDD0C /* NavigationWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationWrapper.swift; sourceTree = "<group>"; };
 		0BC269A12C6794CF005CDD0C /* View+ForegroundColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ForegroundColor+Extension.swift"; sourceTree = "<group>"; };
@@ -49,6 +55,9 @@
 		0BC269AE2C67A813005CDD0C /* PublicAPIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicAPIKey.swift; sourceTree = "<group>"; };
 		0BC269B12C67AA56005CDD0C /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
 		0BC269BC2C682BDD005CDD0C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0BC269C62C689675005CDD0C /* CatImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageModel.swift; sourceTree = "<group>"; };
+		0BC269C82C68B5AD005CDD0C /* CatPictureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatPictureService.swift; sourceTree = "<group>"; };
+		0BFD8A912C7062860055B05D /* MoyaLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +66,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BC269902C670FB1005CDD0C /* CombineMoya in Frameworks */,
-				0BC2698D2C670F6E005CDD0C /* ComposableArchitecture in Frameworks */,
+				0BF21B9D2C6DD41B0059A6A3 /* Viewrito in Frameworks */,
 				0BC269B72C682B66005CDD0C /* FirebaseCrashlytics in Frameworks */,
 				0BC269922C670FB1005CDD0C /* Moya in Frameworks */,
+				0BC269C32C6894B8005CDD0C /* Kingfisher in Frameworks */,
 				0BC269B52C682B66005CDD0C /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				0BC269B92C682B66005CDD0C /* FirebaseFirestore in Frameworks */,
 				0BC269BB2C682B66005CDD0C /* FirebaseFirestoreCombine-Community in Frameworks */,
@@ -69,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B68734E2C6DD13300BD6199 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0B68734F2C6DD17700BD6199 /* CatViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		0BC269492C670D3C005CDD0C = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +107,7 @@
 		0BC269542C670D3C005CDD0C /* CatSlave */ = {
 			isa = PBXGroup;
 			children = (
+				0BC269C42C68966B005CDD0C /* Model */,
 				0BC269982C671085005CDD0C /* Utility */,
 				0BC269972C67107E005CDD0C /* Service */,
 				0BC269862C670D74005CDD0C /* Scene */,
@@ -123,18 +142,10 @@
 		0BC2698A2C670F2C005CDD0C /* CatView */ = {
 			isa = PBXGroup;
 			children = (
+				0B68734E2C6DD13300BD6199 /* ViewModel */,
 				0BC269942C671026005CDD0C /* View */,
-				0BC269932C671021005CDD0C /* Reducer */,
 			);
 			path = CatView;
-			sourceTree = "<group>";
-		};
-		0BC269932C671021005CDD0C /* Reducer */ = {
-			isa = PBXGroup;
-			children = (
-				0BC269952C67102D005CDD0C /* CatReducer.swift */,
-			);
-			path = Reducer;
 			sourceTree = "<group>";
 		};
 		0BC269942C671026005CDD0C /* View */ = {
@@ -148,6 +159,7 @@
 		0BC269972C67107E005CDD0C /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				0BFD8A902C70627C0055B05D /* MoyaPlugin */,
 				0BC269B02C67AA47005CDD0C /* HTTPHeaders */,
 				0BC269A82C67A6EC005CDD0C /* APIKey */,
 				0BC269A42C67A4D7005CDD0C /* CatPictureFetchService */,
@@ -175,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				0BC269A12C6794CF005CDD0C /* View+ForegroundColor+Extension.swift */,
+				0B6873512C6DD30900BD6199 /* Sink+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -183,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				0BC269A62C67A4EE005CDD0C /* CatPictureRouter.swift */,
+				0BC269C82C68B5AD005CDD0C /* CatPictureService.swift */,
 			);
 			path = CatPictureFetchService;
 			sourceTree = "<group>";
@@ -204,6 +218,30 @@
 			path = HTTPHeaders;
 			sourceTree = "<group>";
 		};
+		0BC269C42C68966B005CDD0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BC269C52C68966E005CDD0C /* Cat */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0BC269C52C68966E005CDD0C /* Cat */ = {
+			isa = PBXGroup;
+			children = (
+				0BC269C62C689675005CDD0C /* CatImageModel.swift */,
+			);
+			path = Cat;
+			sourceTree = "<group>";
+		};
+		0BFD8A902C70627C0055B05D /* MoyaPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				0BFD8A912C7062860055B05D /* MoyaLogger.swift */,
+			);
+			path = MoyaPlugin;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -214,6 +252,7 @@
 				0BC2694E2C670D3C005CDD0C /* Sources */,
 				0BC2694F2C670D3C005CDD0C /* Frameworks */,
 				0BC269502C670D3C005CDD0C /* Resources */,
+				0BC269BE2C682DB0005CDD0C /* FirebaseCrashlytics */,
 			);
 			buildRules = (
 			);
@@ -221,13 +260,14 @@
 			);
 			name = CatSlave;
 			packageProductDependencies = (
-				0BC2698C2C670F6E005CDD0C /* ComposableArchitecture */,
 				0BC2698F2C670FB1005CDD0C /* CombineMoya */,
 				0BC269912C670FB1005CDD0C /* Moya */,
 				0BC269B42C682B66005CDD0C /* FirebaseAnalyticsWithoutAdIdSupport */,
 				0BC269B62C682B66005CDD0C /* FirebaseCrashlytics */,
 				0BC269B82C682B66005CDD0C /* FirebaseFirestore */,
 				0BC269BA2C682B66005CDD0C /* FirebaseFirestoreCombine-Community */,
+				0BC269C22C6894B8005CDD0C /* Kingfisher */,
+				0BF21B9C2C6DD41B0059A6A3 /* Viewrito */,
 			);
 			productName = CatSlave;
 			productReference = 0BC269522C670D3C005CDD0C /* CatSlave.app */;
@@ -258,9 +298,10 @@
 			);
 			mainGroup = 0BC269492C670D3C005CDD0C;
 			packageReferences = (
-				0BC2698B2C670F6E005CDD0C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				0BC2698E2C670FB1005CDD0C /* XCRemoteSwiftPackageReference "Moya" */,
 				0BC269B32C682B66005CDD0C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				0BC269C12C6894B8005CDD0C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				0BF21B9B2C6DD41B0059A6A3 /* XCRemoteSwiftPackageReference "Viewrito" */,
 			);
 			productRefGroup = 0BC269532C670D3C005CDD0C /* Products */;
 			projectDirPath = "";
@@ -285,22 +326,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BC269BE2C682DB0005CDD0C /* FirebaseCrashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+			);
+			name = FirebaseCrashlytics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0BC2694E2C670D3C005CDD0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0BC269892C670D80005CDD0C /* BottomTabbarView.swift in Sources */,
-				0BC269962C67102D005CDD0C /* CatReducer.swift in Sources */,
+				0B6873502C6DD17700BD6199 /* CatViewModel.swift in Sources */,
+				0BC269C72C689675005CDD0C /* CatImageModel.swift in Sources */,
 				0BC269562C670D3C005CDD0C /* AppDelegate.swift in Sources */,
+				0B6873522C6DD30900BD6199 /* Sink+Extension.swift in Sources */,
 				0BC269A72C67A4EE005CDD0C /* CatPictureRouter.swift in Sources */,
 				0BC2699F2C679338005CDD0C /* NavigationWrapper.swift in Sources */,
 				0BC269582C670D3C005CDD0C /* SceneDelegate.swift in Sources */,
+				0BFD8A922C7062860055B05D /* MoyaLogger.swift in Sources */,
 				0BC2699B2C6791D1005CDD0C /* CatView.swift in Sources */,
 				0BC269AF2C67A813005CDD0C /* PublicAPIKey.swift in Sources */,
 				0BC269AD2C67A7E5005CDD0C /* APIKey.swift in Sources */,
 				0BC269A22C6794CF005CDD0C /* View+ForegroundColor+Extension.swift in Sources */,
 				0BC269B22C67AA56005CDD0C /* HTTPHeaders.swift in Sources */,
+				0BC269C92C68B5AD005CDD0C /* CatPictureService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,8 +513,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = Y7F2ZW9QG3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CatSlave/Info.plist;
@@ -459,6 +532,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.muskyoo.CatSlave;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -474,6 +548,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y7F2ZW9QG3;
@@ -491,6 +566,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.muskyoo.CatSlave;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -525,14 +601,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0BC2698B2C670F6E005CDD0C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.12.1;
-			};
-		};
 		0BC2698E2C670FB1005CDD0C /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
@@ -549,14 +617,25 @@
 				minimumVersion = 11.0.0;
 			};
 		};
+		0BC269C12C6894B8005CDD0C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
+		0BF21B9B2C6DD41B0059A6A3 /* XCRemoteSwiftPackageReference "Viewrito" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mgdgc/Viewrito.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0BC2698C2C670F6E005CDD0C /* ComposableArchitecture */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0BC2698B2C670F6E005CDD0C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
-			productName = ComposableArchitecture;
-		};
 		0BC2698F2C670FB1005CDD0C /* CombineMoya */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0BC2698E2C670FB1005CDD0C /* XCRemoteSwiftPackageReference "Moya" */;
@@ -586,6 +665,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0BC269B32C682B66005CDD0C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseFirestoreCombine-Community";
+		};
+		0BC269C22C6894B8005CDD0C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BC269C12C6894B8005CDD0C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		0BF21B9C2C6DD41B0059A6A3 /* Viewrito */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BF21B9B2C6DD41B0059A6A3 /* XCRemoteSwiftPackageReference "Viewrito" */;
+			productName = Viewrito;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
