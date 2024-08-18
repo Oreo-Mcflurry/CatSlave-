@@ -11,9 +11,16 @@ import Viewrito
 
 struct CatView: View {
 	@StateObject private var viewModel = CatViewModel()
-	
+	@StateObject var cordinator: UICordinator = .init()
 	var body: some View {
-		gridView
+		if viewModel.leftColumnImages.isEmpty {
+			LoadingCatView()
+				.onAppear {
+					viewModel.fetchCatImages()
+				}
+		} else {
+			gridView
+		}
 	}
 }
 
@@ -21,7 +28,7 @@ extension CatView {
 	@ViewBuilder
 	private var gridView: some View {
 		ScrollView {
-			HStack(alignment: .top) {
+			HStack(alignment: .top, spacing: 15) {
 				gridViewBuilder(viewModel.leftColumnImages)
 				gridViewBuilder(viewModel.rightColumnImages, onAppearDisable: false)
 			}
@@ -39,28 +46,13 @@ extension CatView {
 	}
 	
 	private func gridViewBuilder(_ data: [CatImageDTOModel], onAppearDisable: Bool = true) -> some View {
-		LazyVStack {
+		LazyVStack(spacing: 15) {
 			ForEach(data, id: \.uuid) { item in
-				if item.type == .jpg {
-					KFImage(item.url)
-						.resizable()
-						.placeholder {
-							Color.gray
-								.aspectRatio(item.ratio, contentMode: .fit)
-						}
-						.serialize(as: .JPEG, jpegCompressionQuality: 0.3)
-						.aspectRatio(item.ratio, contentMode: .fit)
-						.clipShape(RoundedRectangle(cornerRadius: 12))
-				} else {
-					KFAnimatedImage(item.url)
-						.placeholder {
-							Color.gray
-								.aspectRatio(item.ratio, contentMode: .fit)
-						}
-						.aspectRatio(item.ratio, contentMode: .fit)
-						.clipShape(RoundedRectangle(cornerRadius: 12))
+				NavigationLink {
+					NavigationLazyView(CatDetailView(data: item))
+				} label: {
+					makeImageLabel(item)
 				}
-				
 			}
 			
 			Color.clear
@@ -71,6 +63,29 @@ extension CatView {
 				}
 		}
 		.frame(maxWidth: .infinity, alignment: .top)
+	}
+	
+	@ViewBuilder
+	private func makeImageLabel(_ item: CatImageDTOModel) -> some View {
+		if item.type == .png {
+			KFImage(item.url)
+				.resizable()
+				.placeholder {
+					Color.gray
+						.aspectRatio(item.ratio, contentMode: .fit)
+				}
+				.serialize(as: .JPEG, jpegCompressionQuality: 0.3)
+				.aspectRatio(item.ratio, contentMode: .fit)
+				.clipShape(RoundedRectangle(cornerRadius: 12))
+		} else {
+			KFAnimatedImage(item.url)
+				.placeholder {
+					Color.gray
+						.aspectRatio(item.ratio, contentMode: .fit)
+				}
+				.aspectRatio(item.ratio, contentMode: .fit)
+				.clipShape(RoundedRectangle(cornerRadius: 12))
+		}
 	}
 }
 

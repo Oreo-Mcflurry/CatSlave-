@@ -1,5 +1,5 @@
 {
-  "originHash" : "68193b994348973ba8bdabd8854c5baf366bf5e49cd0359b5aae7dfa4de65342",
+  "originHash" : "f9cba56a659b6ba1ed7058e73f13a1694d884bae0de65595ced4b0bb6373ef2a",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -17,6 +17,15 @@
       "state" : {
         "revision" : "f455c2975872ccd2d9c81594c658af65716e9b9a",
         "version" : "5.9.1"
+      }
+    },
+    {
+      "identity" : "alerttoast",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/elai950/AlertToast.git",
+      "state" : {
+        "revision" : "b39252eacd159904afd7d718bba0afabb87f2f2f",
+        "version" : "1.3.9"
       }
     },
     {
@@ -92,6 +101,15 @@
       }
     },
     {
+      "identity" : "iqkeyboardmanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQKeyboardManager.git",
+      "state" : {
+        "revision" : "fa9b2bac94b3fabe2d6ca7c74b269d4e8c355111",
+        "version" : "7.1.1"
+      }
+    },
+    {
       "identity" : "kingfisher",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/onevcat/Kingfisher.git",
@@ -143,6 +161,24 @@
       "state" : {
         "revision" : "c43bae3dac73fdd3cb906bd5a1914686ca71ed3c",
         "version" : "6.7.0"
+      }
+    },
+    {
+      "identity" : "realm-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-core.git",
+      "state" : {
+        "revision" : "b77443ca7fa25407869ca537bf3ae912b1427bff",
+        "version" : "12.13.0"
+      }
+    },
+    {
+      "identity" : "realm-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-swift.git",
+      "state" : {
+        "revision" : "b442ee3e9caa1abab26fd9b23f060f6f0815ff48",
+        "version" : "10.33.0"
       }
     },
     {

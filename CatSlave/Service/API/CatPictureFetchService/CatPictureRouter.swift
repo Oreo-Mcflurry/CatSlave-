@@ -30,6 +30,8 @@ extension CatPictureRouter: TargetType {
 	}
 	
 	var headers: [String : String]? {
-		return nil
+		return [
+			HTTPHeaders.catAPIKeyHeader.rawValue: APIKey.catAPIKey.rawValue
+		]
 	}
 }

@@ -7,7 +7,8 @@
 
 import Foundation
 
-enum ImageType: Hashable {
-	case jpg
+enum ImageType: Int, Hashable {
+	case png
+	case jpeg
 	case gif
 }

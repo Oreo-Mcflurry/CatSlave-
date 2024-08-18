@@ -33,6 +33,26 @@
 		0BC269C72C689675005CDD0C /* CatImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC269C62C689675005CDD0C /* CatImageModel.swift */; };
 		0BC269C92C68B5AD005CDD0C /* CatPictureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC269C82C68B5AD005CDD0C /* CatPictureService.swift */; };
 		0BF21B9D2C6DD41B0059A6A3 /* Viewrito in Frameworks */ = {isa = PBXBuildFile; productRef = 0BF21B9C2C6DD41B0059A6A3 /* Viewrito */; };
+		0BF5772E2C70D64A0037CAA2 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0BF5772D2C70D64A0037CAA2 /* IQKeyboardManagerSwift */; };
+		0BF577312C70D7B50037CAA2 /* CatBreedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF577302C70D7B50037CAA2 /* CatBreedRouter.swift */; };
+		0BF577332C70D92F0037CAA2 /* MoyaInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF577322C70D92F0037CAA2 /* MoyaInterceptor.swift */; };
+		0BF577392C70E2790037CAA2 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF577382C70E2790037CAA2 /* SettingView.swift */; };
+		0BF5773C2C70E2F60037CAA2 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5773B2C70E2F60037CAA2 /* SettingViewModel.swift */; };
+		0BF5773E2C70E3620037CAA2 /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5773D2C70E3620037CAA2 /* NavigationLazyView.swift */; };
+		0BF577402C70E3B20037CAA2 /* VersionFetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5773F2C70E3B20037CAA2 /* VersionFetchService.swift */; };
+		0BF577472C71655A0037CAA2 /* CatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF577462C71655A0037CAA2 /* CatDetailView.swift */; };
+		0BF5774A2C7166CD0037CAA2 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 0BF577492C7166CD0037CAA2 /* Realm */; };
+		0BF5774C2C7166CD0037CAA2 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0BF5774B2C7166CD0037CAA2 /* RealmSwift */; };
+		0BF5774F2C7166E70037CAA2 /* SearchHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5774E2C7166E70037CAA2 /* SearchHistoryModel.swift */; };
+		0BF577512C7166FE0037CAA2 /* CatBreedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF577502C7166FE0037CAA2 /* CatBreedModel.swift */; };
+		0BF577542C7187B20037CAA2 /* UICordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF577532C7187B20037CAA2 /* UICordinator.swift */; };
+		0BF5775A2C71B1AE0037CAA2 /* loadingCat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0BF577592C71B1AE0037CAA2 /* loadingCat.gif */; };
+		0BF5775C2C71B1E70037CAA2 /* LoadingCatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5775B2C71B1E70037CAA2 /* LoadingCatView.swift */; };
+		0BF5775F2C71B4440037CAA2 /* ImageDownLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5775E2C71B4440037CAA2 /* ImageDownLoaderService.swift */; };
+		0BF577612C71B4FB0037CAA2 /* ImageDownLoadConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF577602C71B4FB0037CAA2 /* ImageDownLoadConfiguration.swift */; };
+		0BF577632C71B82A0037CAA2 /* CatDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF577622C71B82A0037CAA2 /* CatDetailViewModel.swift */; };
+		0BF577662C71BBF60037CAA2 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 0BF577652C71BBF60037CAA2 /* AlertToast */; };
+		0BF577682C71C0DE0037CAA2 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF577672C71C0DE0037CAA2 /* WebView.swift */; };
 		0BFD8A922C7062860055B05D /* MoyaLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD8A912C7062860055B05D /* MoyaLogger.swift */; };
 		0BFD8A972C70981F0055B05D /* CatImageDTOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD8A962C70981F0055B05D /* CatImageDTOModel.swift */; };
 		0BFD8A9C2C7098360055B05D /* DTOProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD8A9B2C7098360055B05D /* DTOProtocol.swift */; };
@@ -63,6 +83,23 @@
 		0BC269BC2C682BDD005CDD0C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0BC269C62C689675005CDD0C /* CatImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageModel.swift; sourceTree = "<group>"; };
 		0BC269C82C68B5AD005CDD0C /* CatPictureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatPictureService.swift; sourceTree = "<group>"; };
+		0BF577302C70D7B50037CAA2 /* CatBreedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedRouter.swift; sourceTree = "<group>"; };
+		0BF577322C70D92F0037CAA2 /* MoyaInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaInterceptor.swift; sourceTree = "<group>"; };
+		0BF577382C70E2790037CAA2 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		0BF5773B2C70E2F60037CAA2 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		0BF5773D2C70E3620037CAA2 /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
+		0BF5773F2C70E3B20037CAA2 /* VersionFetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionFetchService.swift; sourceTree = "<group>"; };
+		0BF577462C71655A0037CAA2 /* CatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDetailView.swift; sourceTree = "<group>"; };
+		0BF5774E2C7166E70037CAA2 /* SearchHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryModel.swift; sourceTree = "<group>"; };
+		0BF577502C7166FE0037CAA2 /* CatBreedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedModel.swift; sourceTree = "<group>"; };
+		0BF577532C7187B20037CAA2 /* UICordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICordinator.swift; sourceTree = "<group>"; };
+		0BF577592C71B1AE0037CAA2 /* loadingCat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loadingCat.gif; sourceTree = "<group>"; };
+		0BF5775B2C71B1E70037CAA2 /* LoadingCatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCatView.swift; sourceTree = "<group>"; };
+		0BF5775E2C71B4440037CAA2 /* ImageDownLoaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownLoaderService.swift; sourceTree = "<group>"; };
+		0BF577602C71B4FB0037CAA2 /* ImageDownLoadConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownLoadConfiguration.swift; sourceTree = "<group>"; };
+		0BF577622C71B82A0037CAA2 /* CatDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDetailViewModel.swift; sourceTree = "<group>"; };
+		0BF577672C71C0DE0037CAA2 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		0BF577692C71CA660037CAA2 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		0BFD8A912C7062860055B05D /* MoyaLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLogger.swift; sourceTree = "<group>"; };
 		0BFD8A962C70981F0055B05D /* CatImageDTOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageDTOModel.swift; sourceTree = "<group>"; };
 		0BFD8A9B2C7098360055B05D /* DTOProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOProtocol.swift; sourceTree = "<group>"; };
@@ -81,8 +118,12 @@
 				0BF21B9D2C6DD41B0059A6A3 /* Viewrito in Frameworks */,
 				0BC269B72C682B66005CDD0C /* FirebaseCrashlytics in Frameworks */,
 				0BC269922C670FB1005CDD0C /* Moya in Frameworks */,
+				0BF5774A2C7166CD0037CAA2 /* Realm in Frameworks */,
 				0BC269C32C6894B8005CDD0C /* Kingfisher in Frameworks */,
+				0BF5772E2C70D64A0037CAA2 /* IQKeyboardManagerSwift in Frameworks */,
 				0BC269B52C682B66005CDD0C /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				0BF5774C2C7166CD0037CAA2 /* RealmSwift in Frameworks */,
+				0BF577662C71BBF60037CAA2 /* AlertToast in Frameworks */,
 				0BC269B92C682B66005CDD0C /* FirebaseFirestore in Frameworks */,
 				0BC269BB2C682B66005CDD0C /* FirebaseFirestoreCombine-Community in Frameworks */,
 			);
@@ -119,6 +160,7 @@
 		0BC269542C670D3C005CDD0C /* CatSlave */ = {
 			isa = PBXGroup;
 			children = (
+				0BF577572C71B1950037CAA2 /* Asset */,
 				0BC269C42C68966B005CDD0C /* Model */,
 				0BC269982C671085005CDD0C /* Utility */,
 				0BC269972C67107E005CDD0C /* Service */,
@@ -129,6 +171,7 @@
 				0BC269602C670D3D005CDD0C /* LaunchScreen.storyboard */,
 				0BC269BC2C682BDD005CDD0C /* GoogleService-Info.plist */,
 				0BC269632C670D3D005CDD0C /* Info.plist */,
+				0BF577692C71CA660037CAA2 /* PrivacyInfo.xcprivacy */,
 			);
 			path = CatSlave;
 			sourceTree = "<group>";
@@ -136,6 +179,8 @@
 		0BC269862C670D74005CDD0C /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				0BF577432C7165410037CAA2 /* CatDetailView */,
+				0BF577362C70E26E0037CAA2 /* SettingView */,
 				0BFD8AA22C70D17A0055B05D /* SearchView */,
 				0BC2699D2C67932B005CDD0C /* Components */,
 				0BC2698A2C670F2C005CDD0C /* CatView */,
@@ -155,6 +200,7 @@
 		0BC2698A2C670F2C005CDD0C /* CatView */ = {
 			isa = PBXGroup;
 			children = (
+				0BF577522C7187AA0037CAA2 /* Cordinator */,
 				0B68734E2C6DD13300BD6199 /* ViewModel */,
 				0BC269942C671026005CDD0C /* View */,
 			);
@@ -172,10 +218,9 @@
 		0BC269972C67107E005CDD0C /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				0BFD8A902C70627C0055B05D /* MoyaPlugin */,
-				0BC269B02C67AA47005CDD0C /* HTTPHeaders */,
-				0BC269A82C67A6EC005CDD0C /* APIKey */,
-				0BC269A42C67A4D7005CDD0C /* CatPictureFetchService */,
+				0BF5775D2C71B4360037CAA2 /* ImageDownLoader */,
+				0BF577422C70E3ED0037CAA2 /* Version */,
+				0BF577412C70E3E70037CAA2 /* API */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -195,6 +240,9 @@
 			children = (
 				0BC2699E2C679338005CDD0C /* NavigationWrapper.swift */,
 				0BFD8A9D2C70CA2C0055B05D /* OffsetObservableScrollView.swift */,
+				0BF5773D2C70E3620037CAA2 /* NavigationLazyView.swift */,
+				0BF5775B2C71B1E70037CAA2 /* LoadingCatView.swift */,
+				0BF577672C71C0DE0037CAA2 /* WebView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -220,6 +268,7 @@
 		0BC269A82C67A6EC005CDD0C /* APIKey */ = {
 			isa = PBXGroup;
 			children = (
+				0BF5772F2C70D7A00037CAA2 /* CatBreedFetchService */,
 				0BC269AC2C67A7E5005CDD0C /* APIKey.swift */,
 				0BC269AE2C67A813005CDD0C /* PublicAPIKey.swift */,
 			);
@@ -237,6 +286,7 @@
 		0BC269C42C68966B005CDD0C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0BF5774D2C7166D70037CAA2 /* RealmModel */,
 				0BFD8A942C7098040055B05D /* DecodableModel */,
 				0BFD8A932C7097FB0055B05D /* DTOModel */,
 			);
@@ -251,10 +301,130 @@
 			path = Cat;
 			sourceTree = "<group>";
 		};
+		0BF5772F2C70D7A00037CAA2 /* CatBreedFetchService */ = {
+			isa = PBXGroup;
+			children = (
+				0BF577302C70D7B50037CAA2 /* CatBreedRouter.swift */,
+			);
+			path = CatBreedFetchService;
+			sourceTree = "<group>";
+		};
+		0BF577362C70E26E0037CAA2 /* SettingView */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5773A2C70E2E60037CAA2 /* ViewModel */,
+				0BF577372C70E2730037CAA2 /* View */,
+			);
+			path = SettingView;
+			sourceTree = "<group>";
+		};
+		0BF577372C70E2730037CAA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0BF577382C70E2790037CAA2 /* SettingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0BF5773A2C70E2E60037CAA2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5773B2C70E2F60037CAA2 /* SettingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0BF577412C70E3E70037CAA2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0BFD8A902C70627C0055B05D /* MoyaPlugin */,
+				0BC269B02C67AA47005CDD0C /* HTTPHeaders */,
+				0BC269A82C67A6EC005CDD0C /* APIKey */,
+				0BC269A42C67A4D7005CDD0C /* CatPictureFetchService */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		0BF577422C70E3ED0037CAA2 /* Version */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5773F2C70E3B20037CAA2 /* VersionFetchService.swift */,
+			);
+			path = Version;
+			sourceTree = "<group>";
+		};
+		0BF577432C7165410037CAA2 /* CatDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				0BF577452C71654C0037CAA2 /* ViewModel */,
+				0BF577442C71654A0037CAA2 /* View */,
+			);
+			path = CatDetailView;
+			sourceTree = "<group>";
+		};
+		0BF577442C71654A0037CAA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0BF577462C71655A0037CAA2 /* CatDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0BF577452C71654C0037CAA2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0BF577622C71B82A0037CAA2 /* CatDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0BF5774D2C7166D70037CAA2 /* RealmModel */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5774E2C7166E70037CAA2 /* SearchHistoryModel.swift */,
+				0BF577502C7166FE0037CAA2 /* CatBreedModel.swift */,
+			);
+			path = RealmModel;
+			sourceTree = "<group>";
+		};
+		0BF577522C7187AA0037CAA2 /* Cordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0BF577532C7187B20037CAA2 /* UICordinator.swift */,
+			);
+			path = Cordinator;
+			sourceTree = "<group>";
+		};
+		0BF577572C71B1950037CAA2 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				0BF577582C71B1970037CAA2 /* Gif */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		0BF577582C71B1970037CAA2 /* Gif */ = {
+			isa = PBXGroup;
+			children = (
+				0BF577592C71B1AE0037CAA2 /* loadingCat.gif */,
+			);
+			path = Gif;
+			sourceTree = "<group>";
+		};
+		0BF5775D2C71B4360037CAA2 /* ImageDownLoader */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5775E2C71B4440037CAA2 /* ImageDownLoaderService.swift */,
+				0BF577602C71B4FB0037CAA2 /* ImageDownLoadConfiguration.swift */,
+			);
+			path = ImageDownLoader;
+			sourceTree = "<group>";
+		};
 		0BFD8A902C70627C0055B05D /* MoyaPlugin */ = {
 			isa = PBXGroup;
 			children = (
 				0BFD8A912C7062860055B05D /* MoyaLogger.swift */,
+				0BF577322C70D92F0037CAA2 /* MoyaInterceptor.swift */,
 			);
 			path = MoyaPlugin;
 			sourceTree = "<group>";
@@ -350,6 +520,10 @@
 				0BC269BA2C682B66005CDD0C /* FirebaseFirestoreCombine-Community */,
 				0BC269C22C6894B8005CDD0C /* Kingfisher */,
 				0BF21B9C2C6DD41B0059A6A3 /* Viewrito */,
+				0BF5772D2C70D64A0037CAA2 /* IQKeyboardManagerSwift */,
+				0BF577492C7166CD0037CAA2 /* Realm */,
+				0BF5774B2C7166CD0037CAA2 /* RealmSwift */,
+				0BF577652C71BBF60037CAA2 /* AlertToast */,
 			);
 			productName = CatSlave;
 			productReference = 0BC269522C670D3C005CDD0C /* CatSlave.app */;
@@ -384,6 +558,9 @@
 				0BC269B32C682B66005CDD0C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				0BC269C12C6894B8005CDD0C /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				0BF21B9B2C6DD41B0059A6A3 /* XCRemoteSwiftPackageReference "Viewrito" */,
+				0BF5772C2C70D64A0037CAA2 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				0BF577482C7166CD0037CAA2 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				0BF577642C71BBF60037CAA2 /* XCRemoteSwiftPackageReference "AlertToast" */,
 			);
 			productRefGroup = 0BC269532C670D3C005CDD0C /* Products */;
 			projectDirPath = "";
@@ -402,6 +579,7 @@
 				0BC2695F2C670D3D005CDD0C /* Assets.xcassets in Resources */,
 				0BC269BD2C682BDE005CDD0C /* GoogleService-Info.plist in Resources */,
 				0BC269AB2C67A704005CDD0C /* .gitignore in Resources */,
+				0BF5775A2C71B1AE0037CAA2 /* loadingCat.gif in Resources */,
 				0BC269622C670D3D005CDD0C /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,26 +618,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BF5775C2C71B1E70037CAA2 /* LoadingCatView.swift in Sources */,
 				0BFD8AA82C70D1BA0055B05D /* SearchView.swift in Sources */,
 				0BC269892C670D80005CDD0C /* BottomTabbarView.swift in Sources */,
 				0B6873502C6DD17700BD6199 /* CatViewModel.swift in Sources */,
 				0BC269C72C689675005CDD0C /* CatImageModel.swift in Sources */,
 				0BFD8AAE2C70D3980055B05D /* ImageType.swift in Sources */,
+				0BF5773C2C70E2F60037CAA2 /* SettingViewModel.swift in Sources */,
 				0BFD8A9C2C7098360055B05D /* DTOProtocol.swift in Sources */,
 				0BFD8AA62C70D18F0055B05D /* SearchViewModel.swift in Sources */,
+				0BF577632C71B82A0037CAA2 /* CatDetailViewModel.swift in Sources */,
+				0BF577332C70D92F0037CAA2 /* MoyaInterceptor.swift in Sources */,
 				0BC269562C670D3C005CDD0C /* AppDelegate.swift in Sources */,
 				0BFD8A972C70981F0055B05D /* CatImageDTOModel.swift in Sources */,
 				0BFD8A9E2C70CA2C0055B05D /* OffsetObservableScrollView.swift in Sources */,
+				0BF577472C71655A0037CAA2 /* CatDetailView.swift in Sources */,
+				0BF577512C7166FE0037CAA2 /* CatBreedModel.swift in Sources */,
+				0BF577312C70D7B50037CAA2 /* CatBreedRouter.swift in Sources */,
 				0B6873522C6DD30900BD6199 /* Sink+Extension.swift in Sources */,
+				0BF577542C7187B20037CAA2 /* UICordinator.swift in Sources */,
 				0BC269A72C67A4EE005CDD0C /* CatPictureRouter.swift in Sources */,
 				0BC2699F2C679338005CDD0C /* NavigationWrapper.swift in Sources */,
+				0BF5773E2C70E3620037CAA2 /* NavigationLazyView.swift in Sources */,
 				0BC269582C670D3C005CDD0C /* SceneDelegate.swift in Sources */,
 				0BFD8A922C7062860055B05D /* MoyaLogger.swift in Sources */,
 				0BC2699B2C6791D1005CDD0C /* CatView.swift in Sources */,
 				0BC269AF2C67A813005CDD0C /* PublicAPIKey.swift in Sources */,
+				0BF5775F2C71B4440037CAA2 /* ImageDownLoaderService.swift in Sources */,
 				0BC269AD2C67A7E5005CDD0C /* APIKey.swift in Sources */,
+				0BF5774F2C7166E70037CAA2 /* SearchHistoryModel.swift in Sources */,
+				0BF577402C70E3B20037CAA2 /* VersionFetchService.swift in Sources */,
 				0BC269A22C6794CF005CDD0C /* View+ForegroundColor+Extension.swift in Sources */,
+				0BF577392C70E2790037CAA2 /* SettingView.swift in Sources */,
 				0BC269B22C67AA56005CDD0C /* HTTPHeaders.swift in Sources */,
+				0BF577682C71C0DE0037CAA2 /* WebView.swift in Sources */,
+				0BF577612C71B4FB0037CAA2 /* ImageDownLoadConfiguration.swift in Sources */,
 				0BC269C92C68B5AD005CDD0C /* CatPictureService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,6 +802,7 @@
 				DEVELOPMENT_TEAM = Y7F2ZW9QG3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CatSlave/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Cat Slave!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -643,6 +837,7 @@
 				DEVELOPMENT_TEAM = Y7F2ZW9QG3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CatSlave/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Cat Slave!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -722,6 +917,30 @@
 				minimumVersion = 0.0.2;
 			};
 		};
+		0BF5772C2C70D64A0037CAA2 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.1;
+			};
+		};
+		0BF577482C7166CD0037CAA2 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.33.0;
+			};
+		};
+		0BF577642C71BBF60037CAA2 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.3.9;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -764,6 +983,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0BF21B9B2C6DD41B0059A6A3 /* XCRemoteSwiftPackageReference "Viewrito" */;
 			productName = Viewrito;
+		};
+		0BF5772D2C70D64A0037CAA2 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BF5772C2C70D64A0037CAA2 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		0BF577492C7166CD0037CAA2 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BF577482C7166CD0037CAA2 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		0BF5774B2C7166CD0037CAA2 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BF577482C7166CD0037CAA2 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		0BF577652C71BBF60037CAA2 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BF577642C71BBF60037CAA2 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

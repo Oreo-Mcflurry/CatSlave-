@@ -14,7 +14,7 @@ final class CatPictureService {
 	static let shared = CatPictureService()
 	private init() { }
 	
-	private let provider = MoyaProvider<CatPictureRouter>(plugins: [MoyaLoggingPlugin()])
+	private let provider = MoyaProvider<CatPictureRouter>(plugins: [MoyaLoggingPlugin(), MoyaInterceptor()])
 	
 	func fetchRandomCatImage() -> AnyPublisher<[CatImageDTOModel], MoyaError> {
 		return provider.requestPublisher(.randomImage)

@@ -13,6 +13,9 @@ struct SearchView: View {
 	var body: some View {
 		ScrollView {
 			searchBarView(text: $viewModel.searchText)
+			LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
+				
+			}
 		}
 	}
 }
@@ -36,7 +39,7 @@ extension SearchView {
 					EmptyView()
 				}
 			}
-			.padding(EdgeInsets(top: 4, leading: 8, bottom: 4, trailing: 8))
+			.padding(EdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8))
 			.foregroundColor(.secondary)
 			.background(Color(.secondarySystemBackground))
 			.cornerRadius(10.0)
