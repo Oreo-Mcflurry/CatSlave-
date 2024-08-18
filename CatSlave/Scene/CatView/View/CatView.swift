@@ -20,6 +20,11 @@ struct CatView: View {
 				}
 		} else {
 			gridView
+				.sheet(item: $viewModel.selectedCatModel, onDismiss: {
+					viewModel.selectedCatModel = nil
+				}) { data in
+					CatDetailView(data: data)
+				}
 		}
 	}
 }
@@ -48,11 +53,12 @@ extension CatView {
 	private func gridViewBuilder(_ data: [CatImageDTOModel], onAppearDisable: Bool = true) -> some View {
 		LazyVStack(spacing: 15) {
 			ForEach(data, id: \.uuid) { item in
-				NavigationLink {
-					NavigationLazyView(CatDetailView(data: item))
+				Button {
+					viewModel.selectedCatModel = item
 				} label: {
 					makeImageLabel(item)
 				}
+				
 			}
 			
 			Color.clear
@@ -62,7 +68,7 @@ extension CatView {
 					}
 				}
 		}
-		.frame(maxWidth: .infinity, alignment: .top)
+		.frame(maxWidth: .infinity)
 	}
 	
 	@ViewBuilder

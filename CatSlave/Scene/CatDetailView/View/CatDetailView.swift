@@ -17,24 +17,22 @@ struct CatDetailView: View {
 	}
 	
 	var body: some View {
-		ScrollView {
-			VStack {
-				makeImageView(viewModel.data)
-				
-				Button(action: viewModel.downLoadImage) {
-					Text("DownLoad")
-						.padding()
-						.background(Color.blue)
-						.clipShape(.rect(cornerRadius: 10))
+		NavigationWrapper {
+			ZoomableScrollView {
+				VStack {
+					makeImageView(viewModel.data)
 				}
-				.frame(maxWidth: .infinity, alignment: .trailing)
+				.padding(.horizontal)
 			}
-			.padding(.horizontal)
-		}
-		.navigationTitle("Detail")
-		.navigationBarTitleDisplayMode(.inline)
-		.toast(isPresenting: $viewModel.showToast) {
-			AlertToast(type: .regular, title: viewModel.imageDownloadToastmessage)
+			.navigationTitle("Detail")
+			.navigationBarTitleDisplayMode(.inline)
+			.toast(isPresenting: $viewModel.showToast) {
+				AlertToast(type: .regular, title: viewModel.imageDownloadToastmessage)
+			}
+			.toolbar {
+				downloadButtonView
+				shareButtonView
+			}
 		}
 	}
 }
@@ -60,6 +58,22 @@ extension CatDetailView {
 				}
 				.aspectRatio(item.ratio, contentMode: .fit)
 				.clipShape(RoundedRectangle(cornerRadius: 12))
+		}
+	}
+	
+	private var downloadButtonView: some ToolbarContent {
+		ToolbarItem(placement: .topBarTrailing) {
+			Button(action: viewModel.downLoadImage) {
+				Image(systemName: "square.and.arrow.down")
+			}
+		}
+	}
+	
+	private var shareButtonView: some ToolbarContent {
+		ToolbarItem(placement: .topBarTrailing) {
+			Button(action: viewModel.downLoadImage) {
+				Image(systemName: "square.and.arrow.up")
+			}
 		}
 	}
 }

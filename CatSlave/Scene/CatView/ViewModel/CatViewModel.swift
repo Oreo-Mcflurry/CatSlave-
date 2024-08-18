@@ -9,6 +9,7 @@ import SwiftUI
 import Combine
 
 final class CatViewModel: ObservableObject {
+	@Published var selectedCatModel: CatImageDTOModel?
 	@Published var leftColumnImages: [CatImageDTOModel] = []
 	@Published var rightColumnImages: [CatImageDTOModel] = []
 	
