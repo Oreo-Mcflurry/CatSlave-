@@ -69,22 +69,57 @@ final class ImageDownLoaderService {
 	
 	private func saveGifToAlbum(_ gifData: Data, completion: @escaping (String) -> ()) {
 		PHPhotoLibrary.requestAuthorization { status in
-	  guard status == .authorized else {
-		  completion("Permission denied. Please allow photo library access in Settings.")
-		  return
-	  }
-	  
-	  PHPhotoLibrary.shared().performChanges({
-		  let options = PHAssetResourceCreationOptions()
-		  let request = PHAssetCreationRequest.forAsset()
-		  request.addResource(with: .photo, data: gifData, options: options)
-	  }) { success, error in
-		  if success {
-			  completion("GIF saved successfully!")
-		  } else {
-			  completion("Error! Please try later")
-		  }
-	  }
-  }
-}
+			guard status == .authorized else {
+				completion("Permission denied. Please allow photo library access in Settings.")
+				return
+			}
+			
+			PHPhotoLibrary.shared().performChanges({
+				let options = PHAssetResourceCreationOptions()
+				let request = PHAssetCreationRequest.forAsset()
+				request.addResource(with: .photo, data: gifData, options: options)
+			}) { success, error in
+				if success {
+					completion("GIF saved successfully!")
+				} else {
+					completion("Error! Please try later")
+				}
+			}
+		}
+	}
+	
+	func getImageForShare(url: URL?, type: ImageType, completion: @escaping (Data?, UIImage?)->()) {
+		guard let imageUrl = url else { return }
+		
+		URLSession.shared.dataTask(with: imageUrl) { [weak self] data, response, error in
+			guard let self else { return }
+			if error != nil {
+				completion(nil, nil)
+				return
+			}
+			
+			guard let data = data, let image = UIImage(data: data) else {
+				completion(nil, nil)
+				return
+			}
+			
+			if type == .gif {
+				completion(data, nil)
+			} else if configuration.format == .jpeg {
+				if let jpeg = image.jpegData(compressionQuality: configuration.downSampling) {
+					if let jpegImage = UIImage(data: jpeg) {
+						completion(nil, jpegImage)
+					} else {
+						completion(nil, nil)
+						return
+					}
+				} else {
+					completion(nil, nil)
+					return
+				}
+			} else {
+				completion(nil, image)
+			}
+		}.resume()
+	}
 }

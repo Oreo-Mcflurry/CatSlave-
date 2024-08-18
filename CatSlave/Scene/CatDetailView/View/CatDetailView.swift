@@ -33,6 +33,9 @@ struct CatDetailView: View {
 				downloadButtonView
 				shareButtonView
 			}
+			.sheet(isPresented: $viewModel.showShareSheet) {
+				ActivityView(activityItems: [viewModel.shareData])
+			}
 		}
 	}
 }
@@ -71,7 +74,7 @@ extension CatDetailView {
 	
 	private var shareButtonView: some ToolbarContent {
 		ToolbarItem(placement: .topBarTrailing) {
-			Button(action: viewModel.downLoadImage) {
+			Button(action: viewModel.shareImage) {
 				Image(systemName: "square.and.arrow.up")
 			}
 		}
