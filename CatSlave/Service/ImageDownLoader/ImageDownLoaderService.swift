@@ -62,7 +62,7 @@ final class ImageDownLoaderService {
 					}
 				}
 			} else {
-				completion("Error! Please enable photo album permissions.")
+				completion("Error!\nPlease allow photo album access in Settings.")
 			}
 		}
 	}
@@ -70,7 +70,7 @@ final class ImageDownLoaderService {
 	private func saveGifToAlbum(_ gifData: Data, completion: @escaping (String) -> ()) {
 		PHPhotoLibrary.requestAuthorization { status in
 			guard status == .authorized else {
-				completion("Permission denied. Please allow photo library access in Settings.")
+				completion("Error!\nPlease allow photo album access in Settings.")
 				return
 			}
 			

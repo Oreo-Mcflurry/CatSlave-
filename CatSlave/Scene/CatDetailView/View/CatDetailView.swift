@@ -29,6 +29,9 @@ struct CatDetailView: View {
 			.toast(isPresenting: $viewModel.showToast) {
 				AlertToast(type: .regular, title: viewModel.imageDownloadToastmessage)
 			}
+			.toast(isPresenting: $viewModel.showProgressToast) {
+				AlertToast(type: .loading)
+			}
 			.toolbar {
 				downloadButtonView
 				shareButtonView
