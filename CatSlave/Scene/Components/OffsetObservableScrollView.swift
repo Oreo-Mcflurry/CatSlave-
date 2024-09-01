@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-@available(iOS 15.0, *)
 struct OffsetObservableScrollView<Content: View>: View {
 	var axes: Axis.Set = .vertical
 	var showsIndicators: Bool = true

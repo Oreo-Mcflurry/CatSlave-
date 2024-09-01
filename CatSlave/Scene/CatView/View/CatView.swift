@@ -11,12 +11,12 @@ import Viewrito
 
 struct CatView: View {
 	@StateObject private var viewModel = CatViewModel()
-	@StateObject var cordinator: UICordinator = .init()
+
 	var body: some View {
 		if viewModel.leftColumnImages.isEmpty {
 			LoadingCatView()
-				.onAppear {
-					viewModel.fetchCatImages()
+				.task {
+					await viewModel.fetchCatImages()
 				}
 		} else {
 			gridView
@@ -41,12 +41,8 @@ extension CatView {
 			
 			ProgressView()
 		}
-		.addViewModifier { view in
-			if #available(iOS 15.0, *) {
-				view.refreshable {
-						viewModel.fetchCatImages(isRefresh: true)
-					}
-			}
+		.refreshable {
+			await viewModel.fetchCatImages(isRefresh: true)
 		}
 	}
 	
@@ -62,9 +58,9 @@ extension CatView {
 			}
 			
 			Color.clear
-				.onAppear {
+				.task {
 					if !onAppearDisable {
-						viewModel.fetchCatImages()
+						await viewModel.fetchCatImages()
 					}
 				}
 		}

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct SearchView: View {
 	@StateObject private var viewModel = SearchViewModel()
@@ -13,8 +14,21 @@ struct SearchView: View {
 	var body: some View {
 		ScrollView {
 			searchBarView(text: $viewModel.searchText)
-			LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
+			
+			LazyVStack {
+				LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
+					ForEach(viewModel.fetchedBreedInfos, id: \.id) { item in
+						KFImage(item.referenceImageID)
+							.resizable()
+							.frame(height: 300)
+							.aspectRatio(contentMode: .fit)
+					}
+				}
 				
+				ProgressView()
+					.task {
+						await viewModel.fetchBreedInfo()
+					}
 			}
 		}
 	}

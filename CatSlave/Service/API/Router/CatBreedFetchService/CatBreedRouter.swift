@@ -9,8 +9,7 @@ import Foundation
 import Moya
 
 enum CatBreedRouter {
-	case fetchAllbreed
-	case fetchbreedInfo
+	case fetchbreed
 }
 
 extension CatBreedRouter: TargetType {

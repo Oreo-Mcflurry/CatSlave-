@@ -12,6 +12,7 @@ final class CatViewModel: ObservableObject {
 	@Published var selectedCatModel: CatImageDTOModel?
 	@Published var leftColumnImages: [CatImageDTOModel] = []
 	@Published var rightColumnImages: [CatImageDTOModel] = []
+	@Published var refreshedEnded: Bool = false
 	
 	private var leftHeight: CGFloat = .zero
 	private var rightHeight: CGFloat = .zero
@@ -19,13 +20,20 @@ final class CatViewModel: ObservableObject {
 	private let catFetchService = CatPictureService.shared
 	private var cancellable = Set<AnyCancellable>()
 	
-	func fetchCatImages(isRefresh: Bool = false) {
-		catFetchService.fetchRandomCatImage()
-			.sink(with: self) { error in
-				print(error)
-			} receiveValue: { owner, value in
-				owner.appendImages(value, isRefresh: isRefresh)
-			}.store(in: &cancellable)
+	func fetchCatImages(isRefresh: Bool = false) async {
+		// Combine Future를 생성하여 async로 변환
+		await withCheckedContinuation { [weak self] continuation in
+			guard let self else { return }
+			catFetchService.fetchRandomCatImage()
+				.sink(with: self) { error in
+					print(error)
+//					continuation.resume()
+				} receiveValue: { owner, data in
+					owner.appendImages(data, isRefresh: isRefresh)
+					continuation.resume()
+				}
+				.store(in: &cancellable)
+		}
 	}
 }
 

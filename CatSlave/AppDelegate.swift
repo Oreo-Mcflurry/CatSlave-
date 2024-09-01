@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseCore
 import IQKeyboardManagerSwift
+import Kingfisher
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Override point for customization after application launch.
 		FirebaseApp.configure()
 		IQKeyboardManager.shared.enable = true
+		ImageCache.default.memoryStorage.config.totalCostLimit = 1024 * 1024 * 100
 		return true
 	}
 

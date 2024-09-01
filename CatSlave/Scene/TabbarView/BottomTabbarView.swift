@@ -21,15 +21,15 @@ struct BottomTabbarView: View {
 				)
 			}
 			
-//			NavigationWrapper {
-//				SearchView()
-//			}
-//			.tabItem {
-//				Label(
-//					title: { Text("Search") },
-//					icon: { Image(systemName: "magnifyingglass") }
-//				)
-//			}
+			NavigationWrapper {
+				SearchView()
+			}
+			.tabItem {
+				Label(
+					title: { Text("Search") },
+					icon: { Image(systemName: "magnifyingglass") }
+				)
+			}
 			
 			NavigationWrapper {
 				SettingView()
