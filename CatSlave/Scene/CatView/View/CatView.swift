@@ -52,7 +52,7 @@ extension CatView {
 				Button {
 					viewModel.selectedCatModel = item
 				} label: {
-					makeImageLabel(item)
+					CatImageView(item: item)
 				}
 				
 			}
@@ -65,29 +65,6 @@ extension CatView {
 				}
 		}
 		.frame(maxWidth: .infinity)
-	}
-	
-	@ViewBuilder
-	private func makeImageLabel(_ item: CatImageDTOModel) -> some View {
-		if item.type == .png {
-			KFImage(item.url)
-				.resizable()
-				.placeholder {
-					Color.gray
-						.aspectRatio(item.ratio, contentMode: .fit)
-				}
-				.serialize(as: .JPEG, jpegCompressionQuality: 0.3)
-				.aspectRatio(item.ratio, contentMode: .fit)
-				.clipShape(RoundedRectangle(cornerRadius: 12))
-		} else {
-			KFAnimatedImage(item.url)
-				.placeholder {
-					Color.gray
-						.aspectRatio(item.ratio, contentMode: .fit)
-				}
-				.aspectRatio(item.ratio, contentMode: .fit)
-				.clipShape(RoundedRectangle(cornerRadius: 12))
-		}
 	}
 }
 
